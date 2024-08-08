@@ -14,7 +14,7 @@ def hello_world():
 # Main driver function
 if __name__ == '__main__':
     # Get the port from environment variables (Azure sets this automatically)
-    port = int(os.environ.get('PORT', 8000))
+    port = int(os.environ.get('PORT', 80))
     
     # Run the app on the specified port, accessible from any network interface
     app.run(host='0.0.0.0', port=port)
